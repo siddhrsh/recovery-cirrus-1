@@ -47,11 +47,11 @@ make_metalava(){
 
 make_rom(){
 	mka recoveryimage
-	zip=$(up out/target/product/RMX2020/recovery.img)
+	zip=$(up out/target/product/RMX1941/recovery.img)
 	echo " "
 	echo "$zip"
 	curl -sL https://git.io/file-transfer | sh
-	./transfer wet out/target/product/RMX2020/recovery.img
+	./transfer wet out/target/product/RMX1941/recovery.img
 }
 
 make_metalava
