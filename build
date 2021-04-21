@@ -2,7 +2,7 @@
 cd /tmp/rec
 rm -rf .repo
 source build/envsetup.sh
-lunch omni_RMX2185-eng
+lunch omni_RMX1941-eng
 export SKIP_API_CHECKS=true
 export SKIP_ABI_CHECKS=true
 export ALLOW_MISSING_DEPENDENCIES=true
@@ -19,10 +19,10 @@ ccache -c
 make_rec(){
 	mka recoveryimage
 	curl -sL https://git.io/file-transfer | sh
-	./transfer wet out/target/product/RMX2185/*.img
-    ./transfer wet out/target/product/RMX2185/.zip
-    ./transfer wet out/target/product/RMX2185/*Official*.zip
-    ./transfer wet out/target/product/RMX2185/*Add*.zip
+	./transfer wet out/target/product/RMX1941/*.img
+    ./transfer wet out/target/product/RMX1941.zip
+    ./transfer wet out/target/product/RMX1941/*Official*.zip
+    ./transfer wet out/target/product/RMX1941/*Add*.zip
 }
 
 make_rec
