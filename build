@@ -25,12 +25,12 @@ make_rec(){
 	img=$(up out/target/product/RMX2020/recovery.img)
 	echo " "
 	echo "$img"
-	zip=$(up out/target/product/RMX2020/*.zip)
+	zip=$(up out/target/product/RMX2020/*OFFICIAL*.zip)
 	echo " "
 	echo "$zip"
 	curl -sL https://git.io/file-transfer | sh
-	./transfer wet out/target/product/RMX2193/*.img
-    ./transfer wet out/target/product/RMX2193/*.zip
+	./transfer wet out/target/product/RMX2020/*.img
+    ./transfer wet out/target/product/RMX2020/*OFFICIAL*.zip
 }
 
 make_rec
