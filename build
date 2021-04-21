@@ -22,15 +22,11 @@ up(){
 
 make_rec(){
 	mka recoveryimage
-	img=$(up out/target/product/RMX2020/recovery.img)
-	echo " "
-	echo "$img"
-	zip=$(up out/target/product/RMX2020/*OFFICIAL*.zip)
-	echo " "
-	echo "$zip"
 	curl -sL https://git.io/file-transfer | sh
 	./transfer wet out/target/product/RMX2020/*.img
-    ./transfer wet out/target/product/RMX2020/*OFFICIAL*.zip
+    ./transfer wet out/target/product/RMX2020/.zip
+    ./transfer wet out/target/product/RMX2020/*Official*.zip
+    ./transfer wet out/target/product/RMX2020/*Add*.zip
 }
 
 make_rec
