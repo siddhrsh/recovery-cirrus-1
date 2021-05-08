@@ -2,9 +2,6 @@
 cd /tmp/rec
 rm -rf .repo
 cd /tmp/rec
-cd device/realme/RMX2020
-patchelf --set-interpreter /system/bin/linker64 recovery/root/system/bin/*
-cd /tmp/rec
 source build/envsetup.sh
 lunch omni_RMX2020-eng
 export SKIP_API_CHECKS=true
@@ -27,6 +24,7 @@ make_rec(){
     ./transfer wet out/target/product/RMX2020.zip
     ./transfer wet out/target/product/RMX2020/*Official*.zip
 	./transfer wet out/target/product/RMX2020/*OFFICIAL*.zip
+	./transfer wet out/target/product/RMX2020/*SHRP*.zip
     ./transfer wet out/target/product/RMX2020/*Add*.zip
 }
 
