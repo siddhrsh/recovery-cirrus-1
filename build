@@ -3,7 +3,7 @@ cd /tmp/rec
 rm -rf .repo
 cd /tmp/rec
 source build/envsetup.sh
-lunch omni_RMX2020-eng
+lunch omni_rmx2020-eng
 export SKIP_API_CHECKS=true
 export SKIP_ABI_CHECKS=true
 export ALLOW_MISSING_DEPENDENCIES=true
