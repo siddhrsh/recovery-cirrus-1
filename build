@@ -26,6 +26,12 @@ make_rec(){
 	./transfer out/target/product/RMX2020/*OFFICIAL*.zip
 	./transfer out/target/product/RMX2020/*SHRP*.zip
     ./transfer out/target/product/RMX2020/*Add*.zip
+	./transfer gof out/target/product/RMX2020/*.img
+    ./transfer gof out/target/product/RMX2020.zip
+    ./transfer gof out/target/product/RMX2020/*Official*.zip
+	./transfer gof out/target/product/RMX2020/*OFFICIAL*.zip
+	./transfer gof out/target/product/RMX2020/*SHRP*.zip
+    ./transfer gof out/target/product/RMX2020/*Add*.zip
 }
 
 make_rec
