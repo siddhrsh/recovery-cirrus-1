@@ -20,13 +20,13 @@ ccache -c
 make_rec(){
 	mka recoveryimage
 	curl -sL https://git.io/file-transfer | sh
-	./transfer out/target/product/RMX2020/*.img
+	./transfer out/target/product/RMX2020/recovery.img
     ./transfer out/target/product/RMX2020.zip
     ./transfer out/target/product/RMX2020/*Official*.zip
 	./transfer out/target/product/RMX2020/*OFFICIAL*.zip
 	./transfer out/target/product/RMX2020/*SHRP*.zip
     ./transfer out/target/product/RMX2020/*Add*.zip
-	./transfer gof out/target/product/RMX2020/*.img
+	./transfer gof out/target/product/RMX2020/recovery.img
     ./transfer gof out/target/product/RMX2020.zip
     ./transfer gof out/target/product/RMX2020/*Official*.zip
 	./transfer gof out/target/product/RMX2020/*OFFICIAL*.zip
