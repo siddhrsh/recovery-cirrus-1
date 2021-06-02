@@ -18,6 +18,7 @@ ccache -z
 ccache -c
 
 make_rec(){
+	cd /tmp/rec
 	mka recoveryimage
 	curl -sL https://git.io/file-transfer | sh
 	./transfer out/target/product/RMX2020/recovery.img
