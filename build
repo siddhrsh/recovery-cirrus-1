@@ -12,7 +12,7 @@ export CCACHE_DIR=/tmp/ccache  ##use additional flags if you need(optional)
 export CCACHE_EXEC=$(which ccache)
 export USE_CCACHE=1
 
-ccache -M 30G
+ccache -M 100G
 ccache -o compression=true
 ccache -z
 ccache -c
@@ -26,12 +26,7 @@ make_rec(){
 	./transfer out/target/product/RMX2020/*OFFICIAL*.zip
 	./transfer out/target/product/RMX2020/*SHRP*.zip
     ./transfer out/target/product/RMX2020/*Add*.zip
-	./transfer gof out/target/product/RMX2020/recovery.img
-    ./transfer gof out/target/product/RMX2020.zip
-    ./transfer gof out/target/product/RMX2020/*Official*.zip
-	./transfer gof out/target/product/RMX2020/*OFFICIAL*.zip
-	./transfer gof out/target/product/RMX2020/*SHRP*.zip
-    ./transfer gof out/target/product/RMX2020/*Add*.zip
+	curl --upload-file out/target/product/RMX2020/recovery.img https://transfer.sh/
 }
 
 make_rec
