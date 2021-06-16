@@ -3,7 +3,7 @@ cd /tmp/rec
 rm -rf .repo
 cd /tmp/rec
 source build/envsetup.sh
-lunch omni_rmx2020-eng
+lunch twrp_rmx2020-eng
 export SKIP_API_CHECKS=true
 export SKIP_ABI_CHECKS=true
 export ALLOW_MISSING_DEPENDENCIES=true
@@ -21,13 +21,13 @@ make_rec(){
 	cd /tmp/rec
 	mka recoveryimage
 	curl -sL https://git.io/file-transfer | sh
-	./transfer out/target/product/RMX2020/recovery.img
-    ./transfer out/target/product/RMX2020.zip
-    ./transfer out/target/product/RMX2020/*Official*.zip
-	./transfer out/target/product/RMX2020/*OFFICIAL*.zip
-	./transfer out/target/product/RMX2020/*SHRP*.zip
-    ./transfer out/target/product/RMX2020/*Add*.zip
-	curl --upload-file out/target/product/RMX2020/recovery.img https://transfer.sh/
+	./transfer out/target/product/rmx2020/recovery.img
+    ./transfer out/target/product/rmx2020.zip
+    ./transfer out/target/product/rmx2020/*Official*.zip
+	./transfer out/target/product/rmx2020/*OFFICIAL*.zip
+	./transfer out/target/product/rmx2020/*SHRP*.zip
+    ./transfer out/target/product/rmx2020/*Add*.zip
+	curl --upload-file out/target/product/rmx2020/recovery.img https://transfer.sh/
 }
 
 make_rec
