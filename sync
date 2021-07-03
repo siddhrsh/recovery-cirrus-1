@@ -8,8 +8,8 @@ cd /tmp/rec
 
 # Repo init command, that -device,-mips,-darwin,-notdefault part will save you more time and storage to sync, add more according to your rom and choice.Optimization is welcomed! Let's make it quit, and with depth=1 so that no unnecessary things.
 repo init --no-repo-verify --depth=1 -u "$MANIFEST" -b "$BRANCH" -g default,-device,-mips,-darwin,-notdefault
-git config --global user.name "sarthakroy2002"
-git config --global user.email "sarthakroy2002@gmail.com"
+git config --global user.name "siddhrsh"
+git config --global user.email "skoyande17@gmail.com"
 
 sudo apt update -y
 sudo apt install curl wget python -y
@@ -20,6 +20,6 @@ pwd
 ls
 
 ##delete these lines, and replace with your own lines of device sauce
-git clone --depth=1 https://github.com/sarthakroy2002/android_recovery_realme_RMX2020-RealmeUI2.git device/realme/rmx2020
+git clone --depth=1 https://github.com/siddhrsh/android_recovery_realme_RMX2020-RealmeUI2.git device/realme/rmx2020
 
 cd /tmp/rec
